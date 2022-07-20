@@ -1,11 +1,17 @@
 import './style.css';
 import submitScore from './userSubmission.js';
+import displayScores from './displayScore.js';
 
+displayScores();
 const submitBtn = document.getElementById('submit-btn');
 const refreshBtn = document.getElementById('refresh-btn');
 
-submitBtn.addEventListener('click', submitScore());
-// refreshBtn.addEventListener('click', refreshScores());
+submitBtn.addEventListener('click', () => {
+  submitScore();
+});
+refreshBtn.addEventListener('click', () => {
+  displayScores();
+});
 
 // fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
 //   method: 'POST',
