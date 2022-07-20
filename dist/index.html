@@ -6,6 +6,30 @@
     <title>Wbpack Exercise</title>
 <script defer src="/runtime.bundle.js"></script><script defer src="/index.bundle.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+   <section>
+    <h1 id="title">Leaderboard</h1>
+     <div class="main">
+       <div class="recent">
+         <h2>Recent scores</h2>
+         <button id="refresh-btn" type="reset">Refresh</button>
+       </div>
+       <div class="add">
+         <h2>Add your score</h2>
+       </div>
+     </div>
+    <div class="scores">
+     
+        <ul class="score-list">
+          
+        </ul>
+    
+      <div class="form-part">
+          <input type="text" id="user-name" placeholder="Your name"> <br>
+          <input type="text"  id="user-score" placeholder="Your score"> <br>
+          <button id="submit-btn" type="submit">submit</button>
+      </div>
+    </div>
+
+   </section>
 </body>
 </html>
