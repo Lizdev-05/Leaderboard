@@ -1,4 +1,5 @@
 import './style.css';
+
 import submitScore from './userSubmission.js';
 import displayScores from './displayScore.js';
 
