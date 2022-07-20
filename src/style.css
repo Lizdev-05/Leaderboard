@@ -69,12 +69,12 @@ section {
   font-weight: 700;
 }
 
-.score-list  > li:nth-child(odd) {
+.odd{
   background-color: #f2f2f2;
   color: #2b2b2b;
 }
 
-.score-list  > li:nth-child(even) {
+.even{
   background-color: rgb(156, 155, 155);
   color: #2a2a2a;
 }
