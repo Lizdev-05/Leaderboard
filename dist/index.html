@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="/runtime.bundle.js"></script><script defer src="/index.bundle.js"></script></head>
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<script defer src="./runtime.bundle.js"></script><script defer src="./index.bundle.js"></script></head>
 <body>
    <section>
-    <h1 id="title">Leaderboard</h1>
+    <h1 id="title">Leaderboard <i class="fa-solid fa-trophy"></i></h1>
      <div class="main">
        <div class="recent">
-         <h2>Recent scores</h2>
-         <button id="refresh-btn" type="reset">Refresh</button>
+        <div class="top">
+          <h2>Recent scores</h2>
+          <button id="refresh-btn" type="reset">Refresh</button>
+        </div>
+         <ul class="score-list">
+          
+        </ul>
        </div>
        <div class="add">
          <h2>Add your score</h2>
-       </div>
-     </div>
-    <div class="scores">
-     
-        <ul class="score-list">
-          
-        </ul>
-    
-      <div class="form-part">
+         <div class="form-part">
           <input type="text" id="user-name" placeholder="Your name"> <br>
           <input type="text"  id="user-score" placeholder="Your score"> <br>
-          <button id="submit-btn" type="submit">submit</button>
+          <div class="button">
+            <button id="submit-btn" type="submit">submit</button>
+          </div>
       </div>
-    </div>
+       </div>
+     </div>
+    <!-- <div class="scores">
+     
+        
+     
+    </div> -->
 
    </section>
 </body>

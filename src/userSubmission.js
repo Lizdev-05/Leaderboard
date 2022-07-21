@@ -5,7 +5,7 @@ const submitScore = async () => {
   const nameValue = userName.value;
   const scoreValue = userScore.value;
   if (nameValue !== '' && scoreValue !== '') {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/eJRS7w29YVAaVnC0rjhT/scores', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uYVsG2opMIxGzXLZzXmj/scores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

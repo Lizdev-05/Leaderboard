@@ -7,17 +7,20 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background: #0c324c;
   width: 1200px;
   max-width: 100%;
   margin: 3.5rem auto;
-
-  /* font-family: 'Lato', sans-serif; */
+  color: rgb(243, 243, 243);
   font-family: 'Open Sans', sans-serif;
 }
 
+.fa-trophy {
+  color: yellow;
+}
+
 section {
-  margin: 4rem;
+  padding: 4rem;
 }
 
 #title {
@@ -28,10 +31,15 @@ section {
 .main {
   display: flex;
   justify-content: space-around;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .recent {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
   display: flex;
 }
 
@@ -40,11 +48,14 @@ section {
   font-weight: 700;
 }
 
-#refresh-btn {
-  margin-left: 1.5rem;
-  padding: 5px;
-  font-weight: 700;
-  font-size: 0.8rem;
+button {
+  margin-left: 1rem;
+  padding: 10px 20px;
+  box-shadow: 2px 3px 2px rgba(243, 241, 241, 0.2);
+  border: none;
+  border-radius: 10px;
+  background-color: #0c324c;
+  color: white;
 }
 
 .add h2 {
@@ -58,15 +69,20 @@ section {
 }
 
 .score-list {
-  border: 2px solid #2b2b2b;
-  width: 35%;
+  border: 2px solid #6fb4e2;
+  background-color: #014e81;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 20px;
 }
 
 .score-list li {
   list-style: none;
-  padding: 5px;
+  padding: 10px;
   font-size: 1.2rem;
   font-weight: 700;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .even {
@@ -75,24 +91,22 @@ section {
 }
 
 .odd {
-  background-color: rgb(156, 155, 155);
+  background-color: #6fb4e2;
   color: #2a2a2a;
 }
 
-.form-part {
-  width: 25%;
-}
-
-.form-part input {
+input {
   width: 100%;
   padding: 0.5rem;
   margin-top: 1rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 
-#submit-btn {
-  padding: 0.2rem;
-  margin-top: 1rem;
-  margin-left: 80%;
+.button {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -101,7 +115,7 @@ section {
   }
 
   section {
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .main {
@@ -134,9 +148,5 @@ section {
 
   .form-part input {
     width: 100%;
-  }
-
-  #submit-btn {
-    margin-left: 0;
   }
 }

@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/Lizdev-05/Web-package/issues"
   },
-  "homepage": "https://github.com/Lizdev-05/Leaderboard",
+  "homepage": " https://lizdev-05.github.io/Leaderboard/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
